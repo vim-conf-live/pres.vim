@@ -6,22 +6,22 @@ The official vim-based presentation tool for VimConf.Live !
 
 Only in markdown files :
 
-`PresStart` : to start the presentation, showing only the slides
-`PresNotes` : to show the presenter notes
+* `PresStart` : to start the presentation, showing only the slides
+* `PresNotes` : to show the presenter notes
 
 Showing the slides and the notes must be done in different vim instances.
 
 When the presentation in opened :
 
-`PresGoto {number}` : to go to a given slide
-`PresReload` : to reload the current slide (might be needed if the window has changed size)
+* `PresGoto {number}` : to go to a given slide
+* `PresReload` : to reload the current slide (might be needed if the window has changed size)
 
 ## Mappings
 
 When inside a presentation :
 
-`<Leader>n` : to go to the next slide
-`<Leader>p` : to go to the previous slide
+* `<Leader>n` : to go to the next slide
+* `<Leader>p` : to go to the previous slide
 
 ## Example
 
