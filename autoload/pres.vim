@@ -70,7 +70,7 @@ function! s:showSlide(index) abort "{{{
 	setlocal nomodifiable
 
 	" Goto first line with a # symbol
-	goto 1
+	normal gg
 	/^#/
 	echo ""
 endfunction "}}}
