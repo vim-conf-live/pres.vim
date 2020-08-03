@@ -1,4 +1,4 @@
-" Last Change: 2020 juil. 30
+" Last Change: 2020 août 03
 
 " Utility functions "{{{
 
@@ -18,6 +18,7 @@ function! s:setupTab(filename) abort "{{{
 	setlocal noruler
 	setlocal shortmess=
 	setlocal nohlsearch
+	setlocal nolist
 
 	let w:pres_name = l:pres_name
 	let w:slides = s:parse(a:filename)
