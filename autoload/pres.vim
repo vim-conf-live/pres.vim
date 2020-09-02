@@ -130,7 +130,7 @@ function! pres#notes(filename) abort "{{{
 	let l:i = 1
 
 	for slide in w:slides
-		call add(l:content, printf("# Slide %d", l:i))
+		call add(l:content, printf("# Slide %d : %s", l:i, l:slide.content[1]))
 		let l:i += 1
 
 		call extend(l:content, get(slide, "notes", []))
