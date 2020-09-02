@@ -116,8 +116,10 @@ function! pres#start(filename) abort "{{{
 
 	nnoremap <silent> <buffer> <Leader>n :call pres#next()<CR>
 	nnoremap <silent> <buffer> <Leader>p :call pres#prev()<CR>
-	command -buffer -nargs=1 PresGoto call pres#goto(<f-args>)
-	command -buffer -nargs=0 PresReload call s:showSlide(w:index)
+	if !exists(":PresGoto")
+		command -buffer -nargs=1 PresGoto call pres#goto(<f-args>)
+		command -buffer -nargs=0 PresReload call s:showSlide(w:index)
+	endif
 
 	call s:showSlide(w:index)
 endfunction "}}}
