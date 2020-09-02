@@ -1,4 +1,4 @@
-" Last Change: 2020 août 03
+" Last Change: 2020 Sep 02
 
 " Utility functions "{{{
 
@@ -66,6 +66,7 @@ function! s:showSlide(index) abort "{{{
 
 	silent %delete
 	silent call append(0, s:buildContent(w:slides[a:index], w:pres_name, a:index, len(w:slides), winheight(0)))
+	silent call deletebufline(bufname(), '$')
 
 	setlocal nomodifiable
 
